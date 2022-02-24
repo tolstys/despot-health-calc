@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>health calculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" user-scalable="no" content="width=device-width, maximum-scale=1, initial-scale=1">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js?t=1"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<canvas id="items" width="684" height="334"></canvas>
+	
+	<div id="options">
+		<input name="level" type="number" step="1" min="1" max="5" value="1" /> unit's level <br />
+		<br /> <strong>tree</strong> <br />
+		<input name="flat" type="number" step="100" min="0" value="0" max="200" list="hb" /> health bonus <br />
+		<input name="percent" type="number" step="10" min="0" value="0" max="800" list="hm" /> health multiplier <br />
+		<br /> <strong>mutations</strong> <br />
+		<input name="fat" type="checkbox" /> healhty fat (+30%) <br />
+		<input name="bear" type="checkbox" /> bear spirit (+30% for cultists) <br />
+		<input name="fit" type="checkbox" /> fit (+10%) <br />
+		<input name="bonus" type="number" step="10" min="-20" value="0" max="50" list="hb2" /> health bonus (+50 or -20) <br />
+		<br /> <strong>not enough?</strong> <br />
+		<input name="flat_e" type="number" step="1" min="-10000" value="0" max="10000" /> health bonus <br />
+		<input name="percent_e" type="number" step="1" min="-10000" value="0" max="10000" /> health multiplier
+	</div>
+	
+	<datalist id="hb">
+		<option value="0">
+		<option value="100">
+		<option value="200">
+	</datalist>
+	<datalist id="hm">
+		<option value="0">
+		<option value="50">
+		<option value="110">
+		<option value="200">
+		<option value="330">
+		<option value="500">
+		<option value="620">
+		<option value="720">
+		<option value="800">
+	</datalist>
+	<datalist id="hb2">
+		<option value="0">
+		<option value="-20">
+		<option value="50">
+	</datalist>
+</body>
+</html>

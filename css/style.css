@@ -1,0 +1,10 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+#options {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	padding: 20px;
+}
