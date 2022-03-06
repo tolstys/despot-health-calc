@@ -32,7 +32,25 @@ $(function () {
 			percent_e = parseInt($("input[name=percent_e]").val(), 10) || 0;
 		if (level < 1) level = 1;
 		else if (level > 5) level = 5;
-		let newbie_hp = level === 5 ? 250 : 70 + 30 * (level - 1);
+		let newbie_hp;
+		switch (level) {
+			case 1:
+				newbie_hp = 70;
+				break;
+			case 2:
+				newbie_hp = 120;
+				break;
+			case 3:
+				newbie_hp = 170;
+				break;
+			case 4:
+				newbie_hp = 200;
+				break;
+			case 5:
+				newbie_hp = 250;
+				break;
+		}
+		//let newbie_hp = level === 5 ? 250 : 70 + 50 * (level - 1);
 		ctx.drawImage(img, 0, 0);
 		let fontSize = 16;
 		ctx.font = fontSize + "px fantasy";
