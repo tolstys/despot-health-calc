@@ -9,13 +9,23 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<canvas id="items" width="684" height="334"></canvas>
+	<div class="canvas-wrapper">
+		<canvas id="items" width="764" height="334"></canvas>
+		<div id="newbies_count">
+			<input name="lvl_1" type="number" step="1" min="0" value="0" max="49" />
+			<input name="lvl_2" type="number" step="1" min="0" value="0" max="49" />
+			<input name="lvl_3" type="number" step="1" min="0" value="0" max="49" />
+			<input name="lvl_4" type="number" step="1" min="0" value="0" max="49" />
+			<input name="lvl_5" type="number" step="1" min="0" value="0" max="49" />
+		</div>
+	</div>
 	
 	<div id="options">
 		<input name="level" type="number" step="1" min="1" max="5" value="1" /> unit's level <br />
 		<br /> <strong>tree</strong> <br />
 		<input name="flat" type="number" step="100" min="0" value="0" max="200" list="hb" /> health bonus <br />
 		<input name="percent" type="number" step="10" min="0" value="0" max="800" list="hm" /> health multiplier <br />
+		<input name="summons" type="number" step="50" min="0" value="0" max="600" list="hs" /> mglw'nafh <br />
 		<br /> <strong>mutations</strong> <br />
 		<input name="fat" type="checkbox" /> healhty fat (+30%) <br />
 		<input name="bear" type="checkbox" /> bear spirit (+30% for cultists) <br />
@@ -43,6 +53,12 @@
 	<datalist id="hb2">
 		<option value="-20">
 		<option value="50">
+	</datalist>
+	<datalist id="hs">
+		<option value="100">
+		<option value="250">
+		<option value="400">
+		<option value="600">
 	</datalist>
 </body>
 </html>

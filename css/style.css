@@ -8,3 +8,21 @@ body {
 	vertical-align: top;
 	padding: 20px;
 }
+.canvas-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 764px;
+}
+#items {
+	position: absolute;
+}
+#newbies_count {
+	position: relative;
+	width: 32px;
+	top: 64px;
+    left: 704px;
+}
+#newbies_count input {
+	width: 32px;
+	margin: 2px 0 32px 0;
+}
