@@ -4,7 +4,7 @@ $(function () {
 	let items = {
 		tanks: [[220, .03], [370, .05], [530, .10], [710, .06], [900, .07]],
 		fencers: [[160, .05], [310, .06], [440, .07], [600, .08], [810, .09]],
-		tricksters: [[130, .09], [180, .09], [240, .04], [450, .08], [690, .04]],
+		tricksters: [[100, .09], [145, .09], [190, .04], [360, .08], [500, .04]],
 		fighters: [[120, .06], [230, .07], [450, .09], [600, .09], [770, .03]],
 		healers: [[10, .10], [50, .10], [90, .10], [130, .10], [180, .10]],
 		throwers: [[80, .07], [110, .07], [150, .10], [200, .07], [250, .07]],
@@ -26,7 +26,7 @@ $(function () {
 			flat = parseInt($("input[name=flat]").val(), 10) || 0,
 			percent = parseInt($("input[name=percent]").val(), 10) || 0,
 			bonus = parseInt($("input[name=bonus]").val(), 10) || 0,
-			fat = $("input[name=fat]").is(":checked") ? 1.3 : 1,
+			fat = $("input[name=fat]").is(":checked") ? 1.35 : 1,
 			bear = $("input[name=bear]").is(":checked") ? 1.3 : 1,
 			fit = $("input[name=fit]").is(":checked") ? 1.1 : 1,
 			flat_e = parseInt($("input[name=flat_e]").val(), 10) || 0,
